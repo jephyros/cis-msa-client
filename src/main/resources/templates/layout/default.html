@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<!--    <head th:replace="fragments/config :: configFragment"></head>-->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-item.css" rel="stylesheet">
+
+</head>
+
+<div id="default_wrap">
+    <header th:replace="fragments/header :: headerFragment"></header>
+    <div layout:fragment="content"></div>
+
+    <footer th:replace="fragments/footer:: footerFragment"></footer>
+</div>
+
+
+
+</html>

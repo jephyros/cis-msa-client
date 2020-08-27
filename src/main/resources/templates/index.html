@@ -4,8 +4,38 @@
       layout:decorate ="~{layout/default}">
 
 <head>
-    <title>(메인화면)Shop Item - Start Bootstrap Template</title>
+    <title>CIS Shop Item(메인)</title>
 
+    <script>
+        $(function(){
+
+            // nav accordion
+            $('.list-group-item').click(function(e) {
+                //alert("click");
+                e.preventDefault();
+
+                var $this = $(this);
+
+                if ($this.hasClass('active')) {
+                    $this.next().removeClass('active');
+
+                } else {
+                    $this.addClass('active');
+
+                    // $this.parent().parent().find('li .nav__list-depth').removeClass('show');
+                    // $this.parent().parent().find('li .nav__list-depth').slideUp(350);
+                    // $this.next().toggleClass('show');
+                    // $this.next().slideToggle(350);
+                }
+            });
+
+
+        })
+        function shoplist(){
+            alert("shoplist");
+        }
+
+    </script>
 
 </head>
 

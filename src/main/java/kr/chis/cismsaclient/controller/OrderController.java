@@ -1,4 +1,4 @@
-package kr.chis.cismsaclient.order;
+package kr.chis.cismsaclient.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

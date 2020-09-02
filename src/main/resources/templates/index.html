@@ -53,9 +53,12 @@
             //         console.log(data);
             //     }
             // });
-
+            //url:'http://localhost:8181/api/v1/shops',
             $.ajax({
                 url:'http://localhost:8181/api/v1/shops',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTc0MTQxMTcsInVzZXJfbmFtZSI6ImNpcyIsImF1dGhvcml0aWVzIjpbIlVTRVIiLCJBRE1JTiJdLCJqdGkiOiI5YWM1OGI2YS0wYmQ1LTRjMDItODQzMi0yNWFiYmNiMGRlYWQiLCJjbGllbnRfaWQiOiJhdXRoX2lkIiwic2NvcGUiOlsicmVhZCJdfQ.3Kz4WR4OL0GSp7p0ovrpLn7udUuOVqnMrAVhuJB2Z4c');
+                },
                 crossOrigin : true,
                 type : 'GET',
                 //dataType: json,
